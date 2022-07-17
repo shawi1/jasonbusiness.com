@@ -15,7 +15,14 @@ function AppAppBar() {
     <div>
       <AppBar position="fixed">
         <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Box sx={{ flex: 1 }} />
+          <Box
+            component="img" 
+            sx={{ 
+              height: "100%",
+              // width: 150
+            }} 
+            src="https://via.placeholder.com/100"
+            />
           <Link
             variant="h6"
             underline="none"

@@ -4,110 +4,71 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-
-const ImageBackdrop = styled('div')(({ theme }) => ({
-  position: 'absolute',
-  left: 0,
-  right: 0,
-  top: 0,
-  bottom: 0,
-  background: '#000',
-  opacity: 0.5,
-  transition: theme.transitions.create('opacity'),
-}));
-
-const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
-  position: 'relative',
-  display: 'block',
-  padding: 0,
-  borderRadius: 0,
-  height: '40vh',
-  [theme.breakpoints.down('md')]: {
-    width: '100% !important',
-    height: 100,
-  },
-  '&:hover': {
-    zIndex: 1,
-  },
-  '&:hover .imageBackdrop': {
-    opacity: 0.15,
-  },
-  '&:hover .imageMarked': {
-    opacity: 0,
-  },
-  '&:hover .imageTitle': {
-    border: '4px solid currentColor',
-  },
-  '& .imageTitle': {
-    position: 'relative',
-    padding: `${theme.spacing(2)} ${theme.spacing(4)} 14px`,
-  },
-  '& .imageMarked': {
-    height: 3,
-    width: 18,
-    background: theme.palette.common.white,
-    position: 'absolute',
-    bottom: -2,
-    left: 'calc(50% - 9px)',
-    transition: theme.transitions.create('opacity'),
-  },
-}));
-
-const images = [
-  {
-    url: 'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400',
-    title: 'Snorkeling',
-    width: '40%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400',
-    title: 'Massage',
-    width: '20%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400',
-    title: 'Hiking',
-    width: '40%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1453747063559-36695c8771bd?auto=format&fit=crop&w=400',
-    title: 'Tour',
-    width: '38%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1523309996740-d5315f9cc28b?auto=format&fit=crop&w=400',
-    title: 'Gastronomy',
-    width: '38%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400',
-    title: 'Shopping',
-    width: '24%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400',
-    title: 'Walking',
-    width: '40%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400',
-    title: 'Fitness',
-    width: '20%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400',
-    title: 'Reading',
-    width: '40%',
-  },
-];
+import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid } from '@mui/material';
+import TextField from '../components/TextField';
 
 export default function ProductCategories() {
   return (
-    <Container component="section" sx={{ mt: 8, mb: 4}}>
-      <Typography variant="h4" marked="center" align="center" component="h2">
-        Meet Jason Hawi
-      </Typography>
-      Hi
+    <Container component="section" sx={{ my: 10 }}>
+      <Grid 
+        container
+        direction="column"
+        alignItems="center"
+        sx={{
+          mb: 10
+        }}>
+        <Typography variant="h4" marked="center" align="center" component="h2">
+          Meet Jason Hawi
+        </Typography>
+      </Grid>
+      <Grid container>
+        <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              bgcolor: '#81c784',
+              py: 8,
+              px: 3,
+            }}
+          >
+            <Box onSubmit={() => console.log("hi")} sx={{ maxWidth: 600 }}>
+              <Typography variant="h4" component="h4" gutterBottom>
+                The Agent for YOU
+              </Typography>
+              <Typography variant="h5">
+                Jason Hawi is a real estate agent with Keller Williams Realty
+                Brevard serving Melbourne, FL and the surrounding neighborhoods, providing
+                home buyers and sellers with professional, responsive, and attentive service.
+                Want an agent who will really listen to what you want in a home? Need an agent
+                who knows how to effectively market your home so it sells? Give me a call! I'm
+                eager to help and would love to talk to you.
+              </Typography>
+            </Box>
+          </Box>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          sx={{ display: { md: 'block', xs: 'none' }, position: 'relative' }}
+        >
+          <Box
+            component="img"
+            src="https://images.unsplash.com/photo-1616587896595-51352538155b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="call to action"
+            sx={{
+              position: 'absolute',
+              top: -28,
+              left: -28,
+              right: 0,
+              bottom: 0,
+              maxwidth: "100px",
+              height: '100%'
+            }}
+          />
+        </Grid>
+      </Grid>
     </Container>
   );
 }
