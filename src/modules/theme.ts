@@ -4,18 +4,19 @@ import { green, grey, red } from '@mui/material/colors';
 const rawTheme = createTheme({
   palette: {
     primary: {
-      light: '#69696a',
+      light: '#e8e8ea',
       main: '#28282a',
       dark: '#1e1e1f',
     },
     secondary: {
-      light: '#fff5f8',
+      light: '#a7d7a9',
       main: '#81c784',
-      dark: '#e62958',
+      dark: '#4fb054',
     },
     warning: {
-      main: '#ffc071',
-      dark: '#ffb25e',
+      light: "#f2e1f0",
+      main: '#c781c4',
+      dark: '#b04eac',
     },
     error: {
       light: red[50],
@@ -29,7 +30,7 @@ const rawTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: "'Work Sans', sans-serif",
+    fontFamily: "'Montserrat', sans-serif",
     fontSize: 14,
     fontWeightLight: 300, // Work Sans
     fontWeightRegular: 400, // Work Sans
@@ -40,7 +41,7 @@ const rawTheme = createTheme({
 const fontHeader = {
   color: rawTheme.palette.text.primary,
   fontWeight: rawTheme.typography.fontWeightMedium,
-  fontFamily: "'Roboto Condensed', sans-serif",
+  fontFamily: "'Montserrat', sans-serif",
   textTransform: 'uppercase',
 };
 
@@ -62,6 +63,9 @@ const theme = {
       ...fontHeader,
       letterSpacing: 0,
       fontSize: 60,
+      [rawTheme.breakpoints.down("sm")]: {
+        fontSize: 35
+      }
     },
     h2: {
       ...rawTheme.typography.h2,
@@ -77,6 +81,9 @@ const theme = {
       ...rawTheme.typography.h4,
       ...fontHeader,
       fontSize: 36,
+      [rawTheme.breakpoints.down("sm")]: {
+        fontSize: 26
+      }
     },
     h5: {
       ...rawTheme.typography.h5,

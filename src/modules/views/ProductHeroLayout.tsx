@@ -14,6 +14,9 @@ const ProductHeroLayoutRoot = styled('section')(({ theme }) => ({
     minHeight: 500,
     maxHeight: 1300,
   },
+  [theme.breakpoints.down("sm")]: {
+    marginBottom: 3
+  }
 }));
 
 const Background = styled(Box)({
@@ -45,6 +48,7 @@ export default function ProductHeroLayout(
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          
         }}
       >
         {children}

@@ -6,8 +6,9 @@ import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid } from '@mui/material';
 import TextField from '../components/TextField';
+import { TheaterComedySharp } from '@mui/icons-material';
 
-export default function ProductCategories() {
+export default function Intro() {
   return (
     <Container component="section" sx={{ my: 10 }}>
       <Grid 
@@ -17,8 +18,8 @@ export default function ProductCategories() {
         sx={{
           mb: 10
         }}>
-        <Typography variant="h4" marked="center" align="center" component="h2">
-          Meet Jason Hawi
+        <Typography variant="h4" marked="center" align="center" fontWeight="300" sx={{}}>
+          Meet Jason
         </Typography>
       </Grid>
       <Grid container>
@@ -27,18 +28,18 @@ export default function ProductCategories() {
             sx={{
               display: 'flex',
               justifyContent: 'center',
-              bgcolor: '#81c784',
+              bgcolor: "warning.light",
               py: 8,
               px: 3,
             }}
           >
             <Box onSubmit={() => console.log("hi")} sx={{ maxWidth: 600 }}>
-              <Typography variant="h4" component="h4" gutterBottom>
+              <Typography variant="h4" gutterBottom>
                 The Agent for YOU
               </Typography>
-              <Typography variant="h5">
-                Jason Hawi is a real estate agent with Keller Williams Realty
-                Brevard serving Melbourne, FL and the surrounding neighborhoods, providing
+              <Typography fontSize={17}>
+                A real estate agent with Keller Williams Realty
+                Brevard serving Melbourne, FL and the surrounding neighborhoods, Jason provides
                 home buyers and sellers with professional, responsive, and attentive service.
                 Want an agent who will really listen to what you want in a home? Need an agent
                 who knows how to effectively market your home so it sells? Give me a call! I'm

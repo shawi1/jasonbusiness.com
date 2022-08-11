@@ -13,7 +13,7 @@ const rightLink = {
 function AppAppBar() {
   return (
     <div>
-      <AppBar position="fixed">
+      <AppBar position="fixed" sx={{backgroundColor: "primary.main"}}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Box
             component="img" 
@@ -28,7 +28,7 @@ function AppAppBar() {
             underline="none"
             color="inherit"
             href="/premium-themes/onepirate/"
-            sx={{ fontSize: 24 }}
+            sx={{ fontSize: 24, fontWeight: 500, textShadow: "1px 1px 4px #000000;" }}
           >
             {'Jason Hawi'}
           </Link>

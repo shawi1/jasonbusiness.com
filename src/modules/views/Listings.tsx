@@ -26,11 +26,11 @@ const image = {
   my: 4,
 };
 
-function ProductHowItWorks() {
+function Listings() {
   return (
     <Box
       component="section"
-      sx={{ display: 'flex', bgcolor: 'secondary.light', overflow: 'hidden' }}
+      sx={{ display: 'flex', bgcolor: 'primary.light', overflow: 'hidden' }}
     >
       <Container
         sx={{
@@ -53,7 +53,7 @@ function ProductHowItWorks() {
             opacity: 0.7,
           }}
         />
-        <Typography variant="h4" marked="center" component="h2" sx={{ mb: 14 }}>
+        <Typography variant="h4" marked="center" component="h2" fontWeight="300" sx={{ mb: 14 }}>
           Listings
         </Typography>
         <div>
@@ -112,4 +112,4 @@ function ProductHowItWorks() {
   );
 }
 
-export default ProductHowItWorks;
+export default Listings;

@@ -13,6 +13,9 @@ const markClassesMapping: {
     h5: '',
     h6: '',
   },
+  centerPrimary: {
+    
+  },
   left: {
     h1: '',
     h2: '',
@@ -51,7 +54,7 @@ const styles = ({ theme }: { theme: Theme }) => ({
     width: 55,
     display: 'block',
     margin: `${theme.spacing(1)} auto 0`,
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.warning.main,
   },
   [`& .${markClassesMapping.left.h6}`]: {
     height: 2,
