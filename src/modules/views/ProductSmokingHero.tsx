@@ -10,22 +10,14 @@ function ProductSmokingHero() {
       component="section"
       sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', my: 9 }}
     >
-      <Button
-        sx={{
-          border: '4px solid currentColor',
-          borderRadius: 0,
-          height: 'auto',
-          py: 2,
-          px: 5,
-        }}
-      >
-        <Typography variant="h4" component="span">
-          Got any questions? Need help?
-        </Typography>
-      </Button>
-      <Typography variant="subtitle1" sx={{ my: 3 }}>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScNZqT36vO6_Y0fZmkHLRQD2zIPipbEjCyugPIEfDh2_Cbzdw/viewform?embedded=true"
+        width="100%" height="600" frameBorder="0" marginHeight={0} marginWidth={0}>
+        Loading…
+      </iframe>
+      {/* <Typography variant="subtitle1" sx={{ my: 3 }}>
         We are here to help. Get in touch!
-      </Typography>
+      </Typography> */}
     </Container>
   );
 }

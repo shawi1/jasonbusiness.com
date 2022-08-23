@@ -14,14 +14,14 @@ function AppAppBar() {
   return (
     <div>
       <AppBar position="fixed" sx={{backgroundColor: "primary.main"}}>
-        <Toolbar sx={{ justifyContent: 'space-between' }}>
+        <Toolbar sx={{ justifyContent: 'space-between', marginY: '0.5em' }}>
           <Box
             component="img" 
             sx={{ 
               height: "100%",
               // width: 150
             }} 
-            src="https://via.placeholder.com/100"
+            src="/logo.png"
             />
           <Link
             variant="h6"
