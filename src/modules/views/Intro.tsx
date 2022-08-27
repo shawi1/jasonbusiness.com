@@ -10,34 +10,68 @@ import { TheaterComedySharp } from '@mui/icons-material';
 
 export default function Intro() {
   return (
-    <Container component="section" sx={{ my: 10 }}>
-      <Grid 
-        container
-        direction="column"
-        alignItems="center"
-        sx={{
-          mb: 10
-        }}>
-        <Typography variant="h4" marked="center" align="center" fontWeight="300" sx={{}}>
-          Meet Jason
-        </Typography>
-      </Grid>
-      <Grid container>
-        <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
+    <Container>
+      <Grid container sx={{ my: 10 }}>
+        <Grid
+          item
+          xs={12}
+          alignContent="center"
+          sx={{
+            mb: 5
+          }}>
+          <Typography variant="h4" marked="center" align="center" fontWeight="300">
+            Meet Jason
+          </Typography>
+        </Grid>
+        <Grid
+          item
+          justifyContent="center"
+          xs={12}
+          sm={4}
+          md={6}>
+          <img
+            src="./headshot.jpg"
+            alt="Jason Hawi Headshot"            
+            style={{
+              maxHeight: "500px",
+              maxWidth: "100%",
+              margin: "0 auto"
+            }}
+          />
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={8}
+          md={6}
+          sx={{
+            my: {xs: 5}
+          }}>
           <Box
             sx={{
               display: 'flex',
               justifyContent: 'center',
+              alignContent: "center",
               bgcolor: "warning.light",
-              py: 8,
-              px: 3,
+              height: "100%",
+              py: 2
             }}
           >
-            <Box onSubmit={() => console.log("hi")} sx={{ maxWidth: 600 }}>
-              <Typography variant="h4" gutterBottom>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: "column",
+                justifyContent: 'center',
+                alignContent: "center",
+                bgcolor: "warning.light",
+                maxHeight: 500,
+                px: {xs: 3, md: 6}
+              }}
+            >
+              <Typography variant="h5" gutterBottom align="center">
                 The Agent for YOU
               </Typography>
-              <Typography fontSize={17}>
+              <Typography variant="body1" align="justify">
                 A real estate agent with Keller Williams Realty
                 Brevard serving Melbourne, FL and the surrounding neighborhoods, Jason provides
                 home buyers and sellers with professional, responsive, and attentive service.
@@ -47,27 +81,6 @@ export default function Intro() {
               </Typography>
             </Box>
           </Box>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          md={6}
-          sx={{ display: { md: 'block', xs: 'none' }, position: 'relative' }}
-        >
-          <Box
-            component="img"
-            src="https://images.unsplash.com/photo-1616587896595-51352538155b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="call to action"
-            sx={{
-              position: 'absolute',
-              top: -28,
-              left: -28,
-              right: 0,
-              bottom: 0,
-              maxwidth: "100px",
-              height: '100%'
-            }}
-          />
         </Grid>
       </Grid>
     </Container>
