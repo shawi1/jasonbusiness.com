@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Theme } from '@mui/material/styles';
 import { SxProps } from '@mui/system';
 import Box from '@mui/material/Box';
@@ -12,13 +11,6 @@ const item: SxProps<Theme> = {
   flexDirection: 'column',
   alignItems: 'center',
   px: 5,
-};
-
-const number = {
-  fontSize: 24,
-  fontFamily: 'default',
-  color: 'secondary.main',
-  fontWeight: 'medium',
 };
 
 const image = {

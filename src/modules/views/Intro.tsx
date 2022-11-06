@@ -1,12 +1,7 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid } from '@mui/material';
-import TextField from '../components/TextField';
-import { TheaterComedySharp } from '@mui/icons-material';
+import { Grid } from '@mui/material';
 
 export default function Intro() {
   return (
@@ -31,7 +26,7 @@ export default function Intro() {
           md={6}>
           <img
             src="./headshot.jpg"
-            alt="Jason Hawi Headshot"            
+            alt="Jason Hawi Headshot"
             style={{
               maxHeight: "500px",
               maxWidth: "100%",
@@ -45,7 +40,7 @@ export default function Intro() {
           sm={8}
           md={6}
           sx={{
-            my: {xs: 5}
+            my: { xs: 5 }
           }}>
           <Box
             sx={{
@@ -65,7 +60,7 @@ export default function Intro() {
                 alignContent: "center",
                 bgcolor: "warning.light",
                 maxHeight: 500,
-                px: {xs: 3, md: 6}
+                px: { xs: 3, md: 6 }
               }}
             >
               <Typography variant="h5" gutterBottom align="center">
