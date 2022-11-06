@@ -1,22 +1,22 @@
-import { createTheme } from '@mui/material/styles';
-import { green, grey, red } from '@mui/material/colors';
+import { createTheme } from "@mui/material/styles";
+import { green, grey, red } from "@mui/material/colors";
 
 const rawTheme = createTheme({
   palette: {
     primary: {
-      light: '#e8e8ea',
-      main: '#28282a',
-      dark: '#1e1e1f',
+      light: "#e8e8ea",
+      main: "#28282a",
+      dark: "#1e1e1f",
     },
     secondary: {
-      light: '#a7d7a9',
-      main: '#81c784',
-      dark: '#4fb054',
+      light: "#a7d7a9",
+      main: "#81c784",
+      dark: "#4fb054",
     },
     warning: {
       light: "#f2e1f0",
-      main: '#c781c4',
-      dark: '#b04eac',
+      main: "#c781c4",
+      dark: "#b04eac",
     },
     error: {
       light: red[50],
@@ -42,7 +42,7 @@ const fontHeader = {
   color: rawTheme.palette.text.primary,
   fontWeight: rawTheme.typography.fontWeightMedium,
   fontFamily: "'Montserrat', sans-serif",
-  textTransform: 'uppercase',
+  textTransform: "uppercase",
 };
 
 const theme = {
@@ -64,8 +64,8 @@ const theme = {
       letterSpacing: 0,
       fontSize: 60,
       [rawTheme.breakpoints.down("sm")]: {
-        fontSize: 35
-      }
+        fontSize: 35,
+      },
     },
     h2: {
       ...rawTheme.typography.h2,
@@ -82,8 +82,8 @@ const theme = {
       ...fontHeader,
       fontSize: 36,
       [rawTheme.breakpoints.down("sm")]: {
-        fontSize: 26
-      }
+        fontSize: 26,
+      },
     },
     h5: {
       ...rawTheme.typography.h5,

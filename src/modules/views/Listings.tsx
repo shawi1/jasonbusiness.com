@@ -1,15 +1,15 @@
-import { Theme } from '@mui/material/styles';
-import { SxProps } from '@mui/system';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
-import Button from '../components/Button';
-import Typography from '../components/Typography';
+import { Theme } from "@mui/material/styles";
+import { SxProps } from "@mui/system";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
+import Button from "../components/Button";
+import Typography from "../components/Typography";
 
 const item: SxProps<Theme> = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
   px: 5,
 };
 
@@ -22,16 +22,16 @@ function Listings() {
   return (
     <Box
       component="section"
-      sx={{ display: 'flex', bgcolor: 'primary.light', overflow: 'hidden' }}
+      sx={{ display: "flex", bgcolor: "primary.light", overflow: "hidden" }}
     >
       <Container
         sx={{
           mt: 10,
           mb: 15,
-          position: 'relative',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
+          position: "relative",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
         <Box
@@ -39,13 +39,19 @@ function Listings() {
           src="/static/themes/onepirate/productCurvyLines.png"
           alt="curvy lines"
           sx={{
-            pointerEvents: 'none',
-            position: 'absolute',
+            pointerEvents: "none",
+            position: "absolute",
             top: -180,
             opacity: 0.7,
           }}
         />
-        <Typography variant="h4" marked="center" component="h2" fontWeight="300" sx={{ mb: 14 }}>
+        <Typography
+          variant="h4"
+          marked="center"
+          component="h2"
+          fontWeight="300"
+          sx={{ mb: 14 }}
+        >
           Listings
         </Typography>
         <div>

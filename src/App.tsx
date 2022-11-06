@@ -1,8 +1,8 @@
-import './App.css';
-import Index from './Home';
+import "./App.css";
+import Index from "./Home";
 
 function App() {
-  return <Index/>
+  return <Index />;
 }
 
 export default App;
