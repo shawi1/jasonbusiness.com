@@ -18,6 +18,10 @@ const image = {
   my: 4,
 };
 
+const listing1 = "./listing3.jpg";
+const listing2 = "./listing2.jpg";
+const listing3 = "./listing4.jpg";
+
 function Listings() {
   return (
     <Box
@@ -55,17 +59,26 @@ function Listings() {
           Listings
         </Typography>
         <div>
-          <Grid container spacing={5}>
+          <Grid container spacing={5} justifyContent="center">
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box
                   component="img"
-                  src="https://images.unsplash.com/photo-1629078691977-dc51747c0263?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                  src={listing1}
                   alt="suitcase"
                   sx={image}
                 />
                 <Typography variant="h5" align="center">
-                  123 House Street, City
+                  UNDISCLOSED ADDRESS
+                </Typography>
+                <Typography variant="subtitle1" align="center">
+                  $7,500/mo
+                </Typography>
+                <Typography variant="subtitle1" align="center">
+                  5 Bedrooms 3.5 Bathrooms
+                </Typography>
+                <Typography variant="subtitle1" align="center">
+                  3,148 sqft
                 </Typography>
               </Box>
             </Grid>
@@ -73,12 +86,18 @@ function Listings() {
               <Box sx={item}>
                 <Box
                   component="img"
-                  src="https://images.unsplash.com/photo-1629078691977-dc51747c0263?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                  src={listing2}
                   alt="graph"
                   sx={image}
                 />
                 <Typography variant="h5" align="center">
-                  321 House Street, City
+                  161 S Shepard Drive, Cocoa Beach, FL 32931
+                </Typography>
+                <Typography variant="subtitle1" align="center">
+                  $719,000
+                </Typography>
+                <Typography variant="subtitle1" align="center">
+                  Lot/Land
                 </Typography>
               </Box>
             </Grid>
@@ -86,25 +105,46 @@ function Listings() {
               <Box sx={item}>
                 <Box
                   component="img"
-                  src="https://images.unsplash.com/photo-1629078691977-dc51747c0263?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-                  alt="clock"
+                  src={listing3}
+                  alt="graph"
                   sx={image}
                 />
                 <Typography variant="h5" align="center">
-                  132 House Street, City
+                  211 Deauville Avenue Southeast, Palm Bay, FL
                 </Typography>
+                <Typography variant="subtitle1" align="center">
+                  $389,900
+                </Typography>
+                <Typography variant="subtitle1" align="center">
+                  4 Beds 2 Bathrooms
+                </Typography>
+                <Typography variant="subtitle1" align="center">
+                  2,246 sqft
+                </Typography>
+                <a href="https://www.zillow.com/view-3d-home/bcf62e0c-32a0-454d-a300-ba57f70294f3?setAttribution=mls&wl=true&utm_source=dashboard">
+                  <Button
+                    color="secondary"
+                    size="large"
+                    variant="contained"
+                    sx={{ mt: 2 }}  // Adjusted margin-top for spacing
+                  >
+                    3D Tour
+                  </Button>
+                </a>
               </Box>
             </Grid>
           </Grid>
         </div>
-        <Button
-          color="secondary"
-          size="large"
-          variant="contained"
-          sx={{ mt: 8 }}
-        >
-          Click for More!
-        </Button>
+        <a href="https://jasonhawi.spacecoastmls.com/">
+          <Button
+            color="secondary"
+            size="large"
+            variant="contained"
+            sx={{ mt: 8 }}
+          >
+            Click for More!
+          </Button>
+        </a>
       </Container>
     </Box>
   );

@@ -6,6 +6,8 @@ import Hero from "./modules/views/Hero";
 import Listings from "./modules/views/Listings";
 import AppAppBar from "./modules/views/AppAppBar";
 import withRoot from "./modules/withRoot";
+import IdxViewer from "./modules/views/IdxViewer";
+import SocialLinks from "./modules/views/SocialLinks";
 
 function Index() {
   return (
@@ -14,7 +16,9 @@ function Index() {
       <Hero />
       <Intro />
       <Listings />
+      <IdxViewer />
       <ProductSmokingHero />
+      <SocialLinks />
       <AppFooter />
     </React.Fragment>
   );

@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 import AppBar from "../components/AppBar";
 import Toolbar from "../components/Toolbar";
 
@@ -12,15 +12,12 @@ function AppAppBar() {
             component="img"
             sx={{
               height: "100%",
-              // width: 150
             }}
             src="/logo.png"
           />
-          <Link
+          <Typography
             variant="h6"
-            underline="none"
             color="inherit"
-            href="/premium-themes/onepirate/"
             sx={{
               fontSize: 24,
               fontWeight: 500,
@@ -28,7 +25,7 @@ function AppAppBar() {
             }}
           >
             {"Jason Hawi"}
-          </Link>
+          </Typography>
         </Toolbar>
       </AppBar>
       <Toolbar />
